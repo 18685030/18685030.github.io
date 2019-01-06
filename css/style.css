@@ -1,0 +1,587 @@
+
+
+
+
+/* Global styles 
+------------------------------------*/
+
+body
+{
+	margin:0px;
+	padding:0px;
+	background: #DAA520;
+	z-index: -999;
+
+}
+
+/* Header styles 
+------------------------------------*/
+
+header{
+	width: 100vw;
+	height:300px;
+}
+
+.blueText
+{
+    color: #00BFFF;
+}
+
+
+#header-img{
+	position: absolute;
+	left: 0px;
+    top: 0px;
+}
+
+#logo {
+	position: absolute;
+	left: 50vw;
+    top: 10px;
+	text-align: left;
+}
+
+#baa-img {
+
+	position: absolute;
+	left: 90vw;
+    top: 10px;
+	text-align: left;
+}
+
+#facebook-img {
+	position: absolute;
+	left: 10vw;
+    top: 10px;
+	text-align: left;
+}
+
+#twitter-img {
+	position: absolute;
+	left: 3vw;
+    top: 12px;
+	text-align: left;
+}
+
+nav{
+	color: white;
+	position: absolute;
+	margin: auto;
+	top:7vw;
+	bottom:0;
+	left:25vw;
+	right:0;
+/*	left: 22vw;
+    top: 60px;*/
+	margin: 15px;
+	text-align: center
+	width: 600px;
+}
+
+#nav1 a {
+	text-decoration: none;
+	color: white;
+	font-size: 8px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	letter-spacing: 2px;
+	font-family: arial, serif;
+}
+
+#nav1 a:hover {
+	color: #00BFFF;
+}
+
+a, a:visited {
+  text-decoration: none;
+  position: relative;
+  color: #00BFFF;
+}
+a:after, a:visited:after {
+  content: '';
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: #00BFFF;
+  transition: 0.5s;
+}
+a:hover:after, a:visited:hover:after {
+  width: 100%;
+}
+
+#header-intro1 p {
+	position: absolute;
+	left: 55vw;
+    top: 15px;
+    color: #00BFFF;
+	letter-spacing: 2px;
+    width: 300px;
+	font-weight:lighter;
+	line-height: 10px;
+	font-size: 8px;
+	font-family: Raleway, sans-serif;
+}
+
+#header-intro2 p {
+	position: absolute;
+	left: 40vw;
+    top: 140px;
+    color: white;
+    width: 600px;
+	letter-spacing: 2px;
+	font-weight:lighter;
+	line-height: 10px;
+	font-size: 8px;
+	font-family: Raleway, sans-serif;
+}
+
+#header-intro3 p {
+	position: absolute;
+	left: 30vw;
+    top: 200px;
+    color: white;
+    text-align: center;
+	letter-spacing: 2px;
+    width: 400px;
+    border-radius: 4px;
+    background: rgba(204, 204, 204, 0.2);
+    padding: 5px;
+	font-weight:lighter;
+	line-height: 10px;
+	font-size: 8px;
+	font-family: Raleway, sans-serif;
+}
+
+/* Everything styles 
+------------------------------------*/
+
+.photos{
+	background-color: none;
+	width: 100vw;
+	height:400px;
+	margin: 0px;
+}
+
+#photos h1{
+	width: 150px;
+	color: white;
+	font-family: Raleway, sans-serif;
+	font-weight: bolder;
+	font-size: 10px;
+	letter-spacing: 2px;
+	border-radius: 4px;
+	padding: 10px;
+	background: rgba(204, 204, 204, 0.2);
+	position: relative;
+	left: 43vw;
+    top: 40px;
+    z-index: +1;
+	text-align: center;
+}
+
+#photos h3{
+	color: white;
+	font-weight:lighter;
+	width: 275px;
+	font-size: 8px;
+	letter-spacing: 2px;
+	border-radius: 4px;
+	padding: 10px;
+	background: rgba(204, 204, 204, 0.2);
+	font-family: Raleway, sans-serif;
+	line-height: 20px;
+	position: relative;
+	left: 37%;
+    top: 275px;
+    z-index: +1;
+	text-align: center;
+}
+
+.w3-content{
+	position: relative;
+	left: 0px;
+    top: -115px;
+}
+
+.w3-button{
+	background: rgba(204, 204, 204, 0.2);
+	border: none;
+	width:40px;
+	height:40px;
+}
+
+.w3-black{
+	color:white;
+}
+
+.w3-display-left{
+	position: relative;
+	left: 5%;
+    top: -200px;
+}
+
+.w3-display-right{
+	position: relative;
+	left: 85%;
+    top: -200px;
+}
+
+/* Count 
+------------------------------------*/
+
+.count{
+	width: 100vw;
+	height:400px;
+	margin:0px;
+}
+
+
+#happy-clients a{
+	display: block;
+	color: white;
+	background: rgba(204, 204, 204, 0.2);
+	border-radius: 4px;
+	width: 175px;
+	text-decoration: none;
+	position: relative;
+	left: 20px;
+    top: 280px;
+    font-size: 7px;
+	font-family: Raleway, sans-serif;
+	letter-spacing: 2px;
+	font-weight:bold;
+    padding: 20px;
+	text-align: center;
+}
+
+
+#projects-made a{
+	display: block;
+	color: white;
+	background: rgba(204, 204, 204, 0.2);
+	border-radius: 4px;
+	width: 175px;
+	text-decoration: none;
+	position: relative;
+	left: 255px;
+    top: 214px;
+    font-size: 7px;
+	font-family: Raleway, sans-serif;
+	letter-spacing: 2px;
+	font-weight:bold;
+    padding: 20px;
+	text-align: center;
+}
+
+#letters-sent a{
+	display: block;
+	color: white;
+	background: rgba(204, 204, 204, 0.2);
+	border-radius: 4px;
+	width: 175px;
+	text-decoration: none;
+	position: relative;
+	left: 490px;
+    top: 148px;
+    font-size: 7px;
+	font-family: Raleway, sans-serif;
+	letter-spacing: 2px;
+	font-weight:bold;
+    padding: 20px;
+	text-align: center;
+}
+
+#briefs-wrote a{
+	display: block;
+	color: white;
+	background: rgba(204, 204, 204, 0.2);
+	border-radius: 4px;
+	width: 175px;
+	text-decoration: none;
+	position: relative;
+	left: 725px;
+    top: 82px;
+    font-size: 7px;
+	font-family: Raleway, sans-serif;
+	letter-spacing: 2px;
+	font-weight:bold;
+    padding: 20px;
+	text-align: center;
+}
+
+#observations-img{
+	position: absolute;
+	left: 0px;
+    top: 703px;
+	z-index: -1;	
+}
+
+.roundrect {
+	border-radius: 5px;
+	border-style: solid;
+	border-color: rgba(218, 165, 32, 0.3);
+	border-width: 1px;
+}
+
+#face-img {
+	display:block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	text-align: center;
+	opacity: 0.7;
+	left: 20px;
+    top: -205px;
+}
+
+#face-img:hover { 
+ opacity: 1;
+}
+
+#lightbulb-img {
+	display:block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	text-align: center;
+	opacity: 0.7;
+	left: 255px;
+    top: -255px;
+}
+
+#lightbulb-img:hover { 
+ opacity: 1;
+}
+
+#plane-img {
+	display:block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	text-align: center;
+	opacity: 0.7;
+	left: 490px;
+    top: -305px;
+}
+
+#plane-img:hover { 
+ opacity: 1;
+}
+
+#pencil-img {
+	display:block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	text-align: center;
+	opacity: 0.7;
+	left: 725px;
+    top: -355px;
+}
+
+#pencil-img:hover { 
+ opacity: 1;
+}
+
+.closeBtn{
+    position:absolute;
+	left: 95%;
+    top: 5px;
+    transition: .5s ease;
+    width: 50px;
+    height: 40px;
+}
+
+.astro-pop_up1{
+	display: none;
+	width: 75vw;
+	height:50vw;
+   	position: fixed;
+   	border:1px solid white;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 999;
+}
+
+.astro-pop_up2{
+	display: none;
+	width: 75vw;
+	height:50vw;
+   	position: fixed;
+   	border:1px solid white;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 999;
+}
+
+.astro-pop_up3{
+	display: none;
+	width: 75vw;
+	height:50vw;
+   	position: fixed;
+   	border:1px solid white;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 999;
+}
+
+.astro-pop_up4{
+	display: none;
+	width: 75vw;
+	height:50vw;
+   	position: fixed;
+   	border:1px solid white;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	z-index: 999;
+}
+
+/* Explore our solar system
+------------------------------------*/
+
+.our-portfolio{
+	width: 100vw;
+	height:700px;
+	margin:0px;
+	padding-top:0px;
+}
+
+#solarsystem-img{
+	position: absolute;
+	left: 0px;
+    top: 1106px;
+    z-index: -1;
+}
+
+#video{
+	position: relative;
+	left: 10%;
+    top: 80px;
+    opacity: 0.8;
+}
+
+#demovideo, {
+	position: relative;
+	left: 5%;
+    top: 100px;
+    opacity: 0.8;
+}
+
+#validationvideo {
+	position: relative;
+	left: 5%;
+    top: 100px;
+    opacity: 0.8;
+}
+
+#demobackground{
+	position: relative;
+	left: 0%;
+    top: -550px;
+    z-index: -1;
+}
+
+#webstandardbackground{
+	position: relative;
+	left: 0%;
+    top: -45px;
+    z-index: -1;
+}
+
+.webstandards h1{
+	color: white;
+	font-weight:bolder;
+	width: 100vw;
+	padding: 0px;
+	margin:0px;
+	font-size: 40px;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	position: relative;
+    top: 60px;
+}
+
+#our-portfolio h1{
+	color: white;
+	font-weight:bolder;
+	width: 100vw;
+	padding: 0px;
+	margin:0px;
+	font-size: 40px;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	position: relative;
+    top: 60px;
+}
+
+#line3 {
+    height: 0.3px;
+    border: 0;
+    border-top: 0.5px solid #C0C0C0;
+    width:	100px;
+    margin: 1em 0;
+    padding: 0;
+    position: relative;
+	left: 400px;
+    top: 80px;
+}
+
+/*#portfolio-links li{
+    display: inline;
+}
+
+#portfolio-links a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 8px;
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 2px;
+	font-family: arial, serif;
+    position: relative;
+	left: 250px;
+    top: 90px;
+}
+
+#portfolio-links a:hover {
+	color: #ff6961;
+}
+*/
+
+/* Planets 
+------------------------------------*/
+
+.planets{
+	width: 100vw;
+	height:600px;
+	margin:0px;
+	padding-top:0px;
+}
+
+#planets{
+	position: absolute;
+	left: 0px
+    top: 100px;
+	margin: 0px;
+}
+
+
+/* New planets webpage 
+=====================================*/
+
+
+
+
+/* Footer 
+------------------------------------*/
+
+
+

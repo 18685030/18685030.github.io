@@ -1,0 +1,1525 @@
+
+body {
+    opacity: 1;
+    background: #DAA520;
+    transition: 3s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+/*changes colour of screen when screen is a certain size*/
+
+@media only screen and (max-width: 1000px) {
+    body {
+/*        display:none;
+        background-color: red;*/
+    }
+}
+
+#biggerisbetter {
+  position: fixed;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+@media (min-width: 851px) {
+    #biggerisbetter {display:none}
+}
+
+@media (max-width: 850px) {
+    #biggerisbetter {display:block}
+}
+
+/*alien treasure and drop box items
+
+/*dropbox items*/
+
+#dropbox1 {
+  visibility: hidden;
+  position:fixed;
+  left: 2%;
+  top: 2%;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  z-index: 9999;
+}
+
+#dropbox2 {  
+  visibility: hidden;  
+  position:fixed;
+  right: 2%;
+  top: 13%;
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px dashed gold;
+  opacity: 0.8;
+  z-index: 9999;
+}
+
+/*alien items*/
+
+/*.drag1 {
+width: 100px;
+height:100px;
+}*/
+
+#drag1:hover {
+transition: transform .3s;
+transform: scale(1.2);
+}
+
+
+/*alien spaceship*/
+
+.alien {
+opacity: 0;
+width: 50px;
+height:50px;
+position:fixed;  
+}
+
+
+#treasurechesttext {
+  position:fixed;
+  right: 4%;
+  top: 13%;
+  color: gold;
+  font-family: Raleway, sans-serif;
+  font-size: 0.75em;
+
+}
+
+
+/*alien ship toggle*/
+
+.alientoggle {
+  position: fixed;
+  right: 3vw;
+  top: 3vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 62px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 50px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  opacity: 0.5;
+  transition: background-color ease 0.3s;
+}
+
+.alientoggle:before {
+  content: "No Yes";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  background: yellow;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  font: 10px/28px Helvetica;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: -22px;
+  word-spacing: 37px;
+  color: white;
+  text-shadow: -1px -1px rgba(0,0,0,0.15);
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
+}
+
+.alientoggle:checked {
+  background-color: red;
+}
+
+.alientoggle:checked:before {
+  left: 32px;
+}
+
+/*alien selection text*/
+
+#alientext {
+  position: fixed;
+  right: 10vw;
+  top: 3vw;
+  text-align: right;
+  width: 90px;
+  color: white;
+  font-size: 0.7em;
+  opacity: 0.5;
+  font-family: Raleway;
+}
+
+/*custom header*/
+
+#solarsystemname{
+  font-family: Raleway, sans-serif;
+  letter-spacing: 3px;
+  text-shadow: none;
+  position: fixed;
+  text-align: center;
+  color: rgba(218,165,32,0.3);
+  font-weight:bold;
+  margin: auto;
+  top: 0; left: 0; bottom: 90vw; right: 0;
+  font-size: 4em;
+  height: 100px;
+  width: 60vw;
+}
+
+#forgetname, #submitname {
+color: white;
+background-color: rgba(211,211,211,0.2);
+border-radius: 20px;
+}
+
+#entername {
+color: white;
+background-color: rgba(211,211,211,0.2);
+border-style: dotted;
+border-color: grey;
+}
+
+form {
+  position: fixed;
+  right: 3vw;
+  top: 8vw;
+  font-size: 0.8rem;
+  color: blue;
+}
+
+/*Warp gif that plays on page open*/
+
+#warp {
+  opacity: 0.5;
+  z-index: 9000;
+  position: absolute;
+    -moz-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 3s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 3s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+      z-index: 9000;
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+      z-index: 9000;
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+/*Customiser toggle controls container*/
+
+.flex-container {
+  overflow: scroll;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 270px;
+  flex-wrap: wrap;
+  margin-top: 3.2em;
+  padding:	1em;
+  justify-content: center;
+}
+
+.flex-container:hover {
+background-color: rgba(246, 246, 246, 0.2);
+}
+
+.column {
+  flex-basis: 50%;
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .column {
+    flex: 1;
+  }
+  ._25 {
+    flex: 2.5;
+  }
+  ._5 {
+    flex: 5;
+  }
+}
+
+
+
+.orbit{
+   width: 100vw;
+   height: 90vw;
+}
+
+.gravity-sun {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  animation: spin-right 20s linear infinite;
+  z-index: 900;
+}
+
+#sun {
+  overflow: hidden;
+  width: 4em;
+  height: 4em;
+  background-color: yellow;
+  border-radius: 50%;
+  position: relative;
+  left: 0em;
+  top: 0em;
+	z-index: 900;
+}
+
+/*  position: fixed;
+  margin: auto;
+  top: 5vw; left: 0; bottom: 0; right: 0;
+*/
+
+.gravity-murcury {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+  animation: spin-right 8s linear infinite;
+    z-index: 90;
+}
+#murcury {
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: -0.5rem;
+  z-index: 90;
+
+}
+
+#murcurytext {
+  display: none;
+  color: white;
+  position: relative;
+  left: -10px;
+  top: 0px;
+  transform: rotate(90deg);
+  font-size: 0.5em;
+   z-index: 999;
+}
+.gravity-murcury:hover #murcurytext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-murcury:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+
+.gravity-venus {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 9em;
+  height: 9em;
+  animation: spin-right 12s linear infinite;
+    z-index: 80;
+}
+#venus {
+  overflow: hidden;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: relative;
+    left: 50%;
+    top: -0.75rem;
+ z-index: 80;
+}
+
+#venustext {
+  display: none;
+  color: white;
+  position: relative;
+  left: -10px;
+  top: 20px;
+  transform: rotate(90deg);
+  font-size: 0.5em;
+  animation: fadein 2s;
+   z-index: 999;
+}
+.gravity-venus:hover #venustext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-venus:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+
+.gravity-earth {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 13em;
+  height: 13em;
+  animation: spin-right 20s linear infinite;
+    z-index: 70;
+}
+#earth {
+  overflow: hidden;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: relative;
+    left: 50%;
+    top: -0.75rem;
+ z-index: 70;
+}
+
+#earthtext {
+  display: none;
+  color: white;
+  transform: rotate(90deg);
+  position: relative;
+  right: 15px;
+  top: 55px;
+  font-size: 0.5em;
+  animation: fadein 2s;
+   z-index: 999;
+}
+.gravity-earth:hover #earthtext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-earth:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+.gravity-tesla {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 15em;
+  height: 15em;
+  animation: spin-right 16s linear infinite;
+    z-index: 60;
+}
+#tesla {
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+    left: 50%;
+    top: -0.5rem;
+ z-index: 60;
+}
+
+#teslatext {
+  display: none;
+  color: white;
+  position: relative;
+  right: 20px;
+  top: 70px;
+  transform: rotate(90deg);
+  font-size: 0.5em;
+  animation: fadein 2s;
+   z-index: 999;
+}
+.gravity-tesla:hover #teslatext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-tesla:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+
+.gravity-mars {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 18em;
+  height: 18em;
+  animation: spin-right 28s linear infinite;
+    z-index: 50;
+}
+#mars {
+  overflow: hidden;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: relative;
+    left: 50%;
+    top: -0.75rem;
+z-index: 50;
+}
+
+#marstext {
+  display: none;
+  color: white;
+  transform: rotate(90deg);
+  position: relative;
+  right: 10px;
+  top: 95px;
+  font-size: 0.5em;
+  animation: fadein 2s;
+   z-index: 999;
+}
+.gravity-mars:hover #marstext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-mars:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+
+.gravity-jupiter {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 24em;
+  height: 24em;
+  animation: spin-right 48s linear infinite;
+    z-index: 40;
+}
+#jupiter {
+  overflow: hidden;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  position: relative;
+    left: 50%;
+    top: -2rem;
+z-index: 40;
+}
+
+#jupitertext {
+  display: none;
+  position: fixed;
+  left: 160px;
+  top : -10px;
+  color: white;
+  transform: rotate(90deg);
+  font-size: 0.5em;
+   z-index: 999;
+}
+.gravity-jupiter:hover #jupitertext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-jupiter:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+
+
+.gravity-saturn {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 33em;
+  height: 33em;
+  animation: spin-right 60s linear infinite;
+    z-index: 30;
+}
+#saturn {
+  overflow: hidden;
+  width: 5em;
+  height: 4em;
+  border-radius: 50%;
+  position: relative;
+    left: 50%;
+    top: -2.5rem;
+z-index: 30;
+}
+
+#saturntext {
+  display: none;
+  color: white;
+  position: fixed;
+  left: 230px;
+  top : -10px;
+  transform: rotate(90deg);
+  font-size: 0.5em;
+   z-index: 999;
+}
+.gravity-saturn:hover #saturntext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-saturn:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+
+.gravity-uranus {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 42em;
+  height: 42em;
+  animation: spin-right 70s linear infinite;
+    z-index: 20;
+}
+#uranus {
+  overflow: hidden;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: relative;
+    left: 50%;
+    top: -1rem;
+z-index: 20;
+}
+
+#uranustext {
+  display: none;
+  color: white;
+  position: fixed;
+  left: 300px;
+  top : -10px;
+  transform: rotate(90deg);
+  font-size: 0.5em;
+   z-index: 999;
+}
+.gravity-uranus:hover #uranustext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-uranus:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+.gravity-neptune {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom:30vw;
+  right:0;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  width: 48em;
+  height: 48em;
+  animation: spin-right 90s linear infinite;
+    z-index: 10;
+}
+#neptune {
+  overflow: hidden;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: relative;
+    left: 50%;
+    top: -1rem;
+z-index: 10;
+}
+
+#neptunetext {
+  display: none;
+  color: white;
+  position: fixed;
+  left: 340px;
+  top : -10px;
+  transform: rotate(90deg);
+  font-size: 0.5em;
+   z-index: 999;
+}
+.gravity-neptune:hover #neptunetext {
+  display: block;
+  opacity: 0;
+  color: white;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+.gravity-neptune:hover {
+  background-color: rgba(246, 246, 246, 0.1);
+  border: 1px dashed red;
+}
+
+#moon-gif{
+  display: none;
+    width:40%;
+    height:40%;
+  z-index: 999;
+}
+
+/*Planet orbit rotations*/
+
+@keyframes spin-right {
+  100% { transform: rotate(-360deg); }
+}
+
+@keyframes spin-left {
+  100% { transform: rotate(360deg); }
+}
+
+/*Fade in of planet names on hover*/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Magnifying glass blinking*/
+
+@keyframes blink { 
+   50% { border-color: gold; } 
+}
+
+/*background move when starting page*/
+
+@-webkit-keyframes move
+{
+    from {
+        bottom: -20%;
+    }
+    to {
+        bottom: 0%;
+    }
+}
+@keyframes move
+{
+    from {
+        bottom: -20%;
+    }
+    to {
+        bottom: 0%;
+    }
+}
+
+
+/*customisation controls flashing*/
+
+@keyframes ping {
+    0% {
+           opacity: 0.7;
+    }
+    50% {
+           opacity: 1;
+    }
+    100% {
+           opacity: 0.7;
+    }
+
+
+}
+@-webkit-keyframes ping {
+    0% {
+           opacity: 0.7;
+    }
+    50% {
+          opacity: 1;
+    }
+    100% {
+          opacity: 0.7;
+    }
+}
+
+
+/*hubble flashing*/
+
+@keyframes flash {
+    0% {
+           opacity: 0.5;
+    }
+    50% {
+           opacity: 1;
+    }
+    100% {
+           opacity: 0.5;
+    }
+
+
+}
+@-webkit-keyframes flash {
+    0% {
+           opacity: 0.5;
+    }
+    50% {
+          opacity: 1;
+    }
+    100% {
+          opacity: 0.5;
+    }
+}
+
+
+
+
+/*planet page into and then disapear*/
+
+/*#universe {
+
+    bottom: 0%;
+    position: absolute;
+    -webkit-animation: move 30s;
+    animation: move 30s;
+    z-index: -999;
+}
+*/
+
+/*hubble telescope*/
+
+#hubble{
+    position:fixed;
+    left: 5%;
+    top: 60%;
+    transform: rotate(300deg);
+    transition: .5s ease;
+    width: 50px;
+    height: 40px;
+    -moz-transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+/*    -moz-animation:flash normal 1.5s infinite ease-in-out;
+    -webkit-animation:flash normal 1.5s infinite ease-in-out;
+    -ms-animation:flash normal 1.5s infinite ease-in-out;
+    animation:flash normal 1.5s infinite ease-in-out;*/
+}
+
+#hubble:hover{
+transform: scale(1.3);
+border-color: red;
+}
+
+.hubbleclose{
+  opacity: 0;
+  position:fixed;
+  left: 82%;
+  top: 7%;
+  transition: 1s ease;
+  width: 50px;
+  height: 40px;
+  z-index: 9999;
+}
+
+/*Pops ups*/
+
+.closeBtn{
+    position:absolute;
+  left: 95%;
+    top: 5px;
+    transition: .5s ease;
+    width: 50px;
+    height: 40px;
+}
+
+.sun-pop-up{
+  display: none;
+  overflow: scroll;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.murcury-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.venus-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.earth-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.tesla-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.mars-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.jupiter-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.saturn-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.uranus-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.neptune-pop-up{
+  display: none;
+  width: 75vw;
+  height:60vw;
+    position: fixed;
+    border:1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+/*customisation zoom text box*/
+
+#zoomtext {
+  display: none;
+  position: fixed;
+  text-align: center;
+  width: 50%;
+  height: 55px;
+  left: 31%;
+  top: 3%;
+  color: white;
+  letter-spacing: 3px;
+  background-color: rgba(255, 0, 0, 0.5);
+  font-size: 1em;
+  font-family: Raleway;
+}
+
+
+/*toggle switch lettering colour*/
+
+#toggletext {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  left: 0px;
+  color: white;
+  letter-spacing: 3px;
+  background-color: rgba(255, 0, 0, 0.5);
+  font-size: 1em;
+  font-family: Raleway;
+      -moz-animation:flash normal 3s infinite ease-in-out;
+    /* Firefox */
+    -webkit-animation:flash normal 3s infinite ease-in-out;
+    /* Webkit */
+    -ms-animation:flash normal 3s infinite ease-in-out;
+    /* IE */
+    animation:flash normal 3s infinite ease-in-out;
+}
+
+#activate label { 
+  color: yellow; 
+  font-size: 0.75em;
+  font-family: Raleway;
+}
+
+/*toggle switch*/
+
+.toggle-switch {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none
+}
+
+
+.toggle-switch {
+    display: inline-block;
+	/*flex: 1 0 21%;*/
+    vertical-align: top;
+	padding: 1em;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.toggle-switch .ts-label {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    vertical-align: top;
+    -webkit-transition: color .56s cubic-bezier(.4, 0, .2, 1);
+    transition: color .56s cubic-bezier(.4, 0, .2, 1)
+}
+
+.toggle-switch .ts-helper {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 16px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, .26);
+    -webkit-transition: background .28s cubic-bezier(.4, 0, .2, 1);
+    transition: background .28s cubic-bezier(.4, 0, .2, 1);
+    vertical-align: middle;
+    cursor: pointer
+}
+
+.toggle-switch .ts-helper:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 24px;
+    height: 24px;
+    background: #fafafa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .28);
+    border-radius: 50%;
+    webkit-transition: left .28s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1), box-shadow .28s cubic-bezier(.4, 0, .2, 1);
+    transition: left .28s cubic-bezier(.4, 0, .2, 1), background .28s cubic-bezier(.4, 0, .2, 1), box-shadow .28s cubic-bezier(.4, 0, .2, 1)
+}
+
+.toggle-switch:not(.disabled) .ts-helper:active:before {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .28), 0 0 0 20px rgba(128, 128, 128, .1)
+}
+
+.toggle-switch input {
+    position: absolute;
+    z-index: 1;
+    width: 46px;
+    margin: 0 0 0 -4px;
+    height: 24px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.toggle-switch input:checked+.ts-helper:before {
+    left: 20px
+}
+
+.toggle-switch:not([data-ts-color]) input:not(:disabled):checked+.ts-helper {
+    background: rgba(0, 150, 136, .5)
+}
+
+.toggle-switch:not([data-ts-color]) input:not(:disabled):checked+.ts-helper:before {
+    background: #009688
+}
+
+.toggle-switch:not([data-ts-color]) input:not(:disabled):checked+.ts-helper:active:before {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .28), 0 0 0 20px rgba(0, 150, 136, .2)
+}
+
+.toggle-switch.disabled {
+    opacity: .6;
+    filter: alpha(opacity=60)
+}
+
+.toggle-switch[data-ts-color=green] input:not(:disabled):checked+.ts-helper {
+    background: rgba(76, 175, 80, .5)
+}
+
+.toggle-switch[data-ts-color=green] input:not(:disabled):checked+.ts-helper:before {
+    background: #4CAF50
+}
+
+.toggle-switch[data-ts-color=green] input:not(:disabled):checked+.ts-helper:active:before {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .28), 0 0 0 20px rgba(76, 175, 80, .2)
+}
+
+/*scroll bar*/
+
+/* width */
+::-webkit-scrollbar {
+  background: grey; 
+  width: 10px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: green; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3498DB; 
+}
+
+/*alien speed range slider*/
+
+.zoomcontainer {
+  visibility: hidden;
+  position: fixed;
+  left: 35vw;
+  top: 4vw;
+  width: 30vw;
+}
+
+.zoomcontainer p {
+color: blue;
+}
+
+.zoomcontainer {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.zoomcontainer:hover {
+  opacity: 1;
+}
+
+.zoomcontainer::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.zoomcontainer::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#rangevalue{
+  visibility: hidden;
+  position: fixed;
+  font-family: Raleway, sans-serif;;
+  font-size: 4em;
+  font-style: bold;
+  left: 28vw;
+  top: 1vw;
+  color: white;
+}
+
+/*magnifying glass and magnify range slider*/
+
+/*.zoommagnifycontainer {
+  visibility: hidden;
+  position: fixed;
+  left: 40vw;
+  top: 12vw;
+  width: 30vw;
+}
+
+.zoommagnifycontainer p {
+color: blue;
+}
+
+.zoommagnifycontainer {
+  -webkit-appearance: none;
+  width: 30%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+/*.zoommagnifycontainer:hover {
+  opacity: 1;
+}*/
+
+/*.zoommagnifycontainer::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.zoommagnifycontainer::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+#magnifyrangevalue{
+  visibility: hidden;
+  position: fixed;
+  font-family: Raleway, sans-serif;;
+  font-size: 4em;
+  font-style: bold;
+  left: 33vw;
+  top: 9vw;
+  color: white;
+}*/
+
+* {box-sizing: border-box;}
+
+.img-magnifier-glass {
+  visibility: hidden;
+  animation: blink .5s step-end infinite alternate;
+  position: absolute;
+  border: 2px dotted red;
+  border-radius: 50%;
+  cursor: none;
+  width: 250px;
+  height: 250px;
+}
+
+
+/*quote for zoom area*/
+
+.quotes{
+  background-color: #ff6f6f;
+  width: 100vw;
+  height:300px;
+  margin:0px;
+  padding-top:1px;
+}
+
+#quotes h1{
+  color: #ff6f6f;
+  text-shadow: 2px 0 #3e3e3e;
+  letter-spacing:1px;
+  font-weight:bolder;
+  width: 450px;
+  padding: 0px;
+  margin:0px;
+  font-size: 40px;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  position: fixed;
+  opacity: 0.3;
+  margin: auto;
+  left: 0;
+  top: 10vw;
+  bottom:0;
+  right:0;
+  height: 100px;
+
+}
+
+#quotes h2{
+  color: #ff6f6f;
+  font-weight:lighter;
+  font-size: 20px;
+  width: 450px;
+  margin: 0px;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  position: fixed;
+  opacity: 0.3;
+  margin: auto;
+  left: 0;
+  top: 30vw;
+  bottom:0;
+  right:0;
+  height: 50px;
+}
+
+blockquote h1:before { 
+  font-family: Georgia, sans-serif;
+  text-shadow: none;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 100px;
+  position: absolute;
+  left: -70px;
+  top: -30px;
+  color: #3e3e3e;
+}
+
+blockquote h1:after { 
+  font-family: Georgia, sans-serif;
+  text-shadow: none;
+  padding-left: 50px;
+  content: "\201D";
+  font-size: 100px;
+  position: absolute;
+  right: -50px;
+  top: -30px;
+  color: #3e3e3e;
+}
+
+/*drop down menu button and details*/
+
+#planetlinks{
+  opacity: 0.6;
+  position: fixed;
+  right: 3vw;
+  top: 12vw;
+}
+
+.dropbtn {
+    width: 115px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #4CAF50;
+    outline: none;
+    color: white;
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+
+    background-color: #DAA520;
+}
+#myInput {
+    border-box: box-sizing;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    padding: 10px 10px 10px 10px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 10px;
+    font-family: Raleway, sans-serif;
+    position: absolute;
+    border-radius: 10px;
+    top: 33px;
+    background-color: #f6f6f6;
+    width: 115px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #999900
+}
+
+.show {
+  display:block;
+}
+
+
+/*rocket ship move buttons and icon*/
+
+/*#block { 
+  position: fixed;
+  z-index: 9999;
+  width: 20px; 
+  height: 20px; 
+  left: 90vw;
+  background: green; 
+  margin: 10px;
+}
+
+#go{ 
+  z-index: 9999;
+}*/
+
+
+
+
+

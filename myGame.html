@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	 <link rel="stylesheet" href="css/myGame.css">
+	 <script type "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	 <title>Alien Game</title>
+
+</head>
+
+<body>
+
+<div id="background" style="width:100vw; height:100vw; border:0;">
+
+	<canvas id="canvas" width="512" height="480"></canvas>
+
+<div id="container">
+
+	<div id="lastgametext"><p>Last Score: </p></div>
+
+	<div id="lastgameresult"><p></p></div>
+
+	<div id="highscoretext"><p>Highest Score: </p></div>
+
+	<div id="highscoreresult"><p></p></div>
+
+</div>
+
+	<button id="resetBtn" onclick="deleteItems();"><i class="fa fa-cog"></i><span style="color:white;font-weight:bold">  Clear  </span><span style="color:yellow;font-weight:bold">  Scores  </span><span style="color: blue;font-weight:bold">  & Restart  </span><span style="color: black;font-weight:bold">  in 3 sec.  </span></button>
+
+	<div id="timer"></div>
+
+</div>
+
+<div id="congrats"><p></p></div>
+
+</body>
+	 <script src = "js/myGame.js"></script>
+
+</html>
+

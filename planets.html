@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/planets.css">
+
+	<title>Our Solar System</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script type "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<img id = "warp" src="assets/warp.gif" style="width:100vw; height:150vw; border:0;">
+
+<body> 
+
+<!-- planets and orbits -->
+
+<div class ="orbit" >
+
+	<div class='alien'><img src="assets/ufo.gif" draggable="true" style="width:100%; height:100%; border:0;"></div>
+
+	<img id = "universe" src="assets/universe.jpg" style="width:100vw; height:200vw; border:0;">
+
+		<div id="dropbox1" ondrop="drop(event)" ondragover="allowDrop(event)">
+	  	<img src="assets/treasure.png" id="drag1" draggable="true" ondragstart="drag(event)"  width="100" height="100">
+		</div>
+
+		<div id="dropbox2" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<div id="treasurechesttext"><p>Treasure Chest</p></div>
+		</div>
+
+	<div><img id="hubble" src="assets/hubble.png" onclick="typeWriter()" style="width:100px; height:100px; border:0;"></div>
+	<div><img class="hubbleclose" src="assets/cancel.png" style="width:30px; height:30px;"></div>
+
+		<div class="gravity-sun">
+			<div id="sun">
+				<img src="assets/sun.gif" style="width:100%; height:100%; border:0;">
+    		</div>
+		</div>
+
+		<div class="gravity-murcury">
+			<div id="murcury">
+				<img src="assets/murcury.gif" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="murcurytext"><p>MURCURY</p></div>
+		</div>
+
+		<div class="gravity-venus">
+			<div id="venus">
+				<img src="assets/venus.gif" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="venustext"><p>VENUS</p></div>
+		</div>
+
+		<div class="gravity-earth">
+			<div id="earth">
+				<img src="assets/earth.gif" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="earthtext"><p>EARTH</p></div>
+		</div>
+
+		<div class="gravity-tesla">
+			<div id="tesla">
+				<img src="assets/tesla.png" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="teslatext"><p>SPACEMAN</p></div>
+		</div>
+
+		<div class="gravity-mars">
+			<div id="mars">
+				<img src="assets/mars1.gif" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="marstext"><p>MARS</p></div>
+		</div>
+
+		<div class="gravity-jupiter">
+			<div id="jupiter">
+				<img src="assets/jupiter.gif" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="jupitertext"><p>JUPITER</p></div>
+		</div>
+
+		<div class="gravity-saturn">
+			<div id=saturn>
+				<img src="assets/saturn.png" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="saturntext"><p>SATURN</p></div>
+		</div>
+
+		<div class="gravity-uranus">
+			<div id=uranus>
+				<img src="assets/uranus.gif" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="uranustext"><p>URANUS</p></div>
+		</div>
+
+		<div class="gravity-neptune">
+			<div id=neptune>
+				<img src="assets/neptune.gif" style="width:100%; height:100%; border:0;">
+			</div>
+			<div id="neptunetext"><p>NEPTUNE</p></div>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- planet details pops ups -->
+
+<div class="sun-pop-up">
+	<img src="assets/sun-details.png" style="width:100%; height:200%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="murcury-pop-up">
+	<img src="assets/murcury-details.png" style="width:100%; height:100%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="venus-pop-up">
+	<img src="assets/venus-details.png" style="width:100%; height:100%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="earth-pop-up">
+	<img id="earthphoto" src="assets/earth-details.png" style="width:100%; height:100%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="tesla-pop-up">
+
+	<iframe width="100%" height="100%" src="https://www.youtube.com/embed/aBr2kKAHN6M?start=3101&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="mars-pop-up">
+	<img src="assets/mars-details.png" style="width:100%; height:100%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="jupiter-pop-up">
+	<img src="assets/jupiter-details.png" style="width:100%; height:100%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="saturn-pop-up">
+	<img src="assets/saturn-details.png" style="width:100%; height:100%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="uranus-pop-up">
+	<img src="assets/uranus-details.png" style="width:100%; height:100%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+<div class="neptune-pop-up">
+	<img src="assets/neptune-details.png" style="width:100%; height:100%; border:0;">
+	<img class="closeBtn" src="assets/cancel.png" style="width:30px; height:30px;">
+</div>
+
+
+<!-- <img id="moon-gif" src="assets/moon.gif" style="width:40%; height:40%; border:0;"> -->
+
+
+<!-- solar system header - customisable -->
+
+      <form>
+        <div class="remember">
+          <input id="entername" type="text" required>
+          <input id="submitname" type="submit" value="Name Me">
+          
+        </div>
+        <div class="forget">
+          <input id="forgetname" type="reset" value="Forget Name">
+        </div>
+      </form>
+
+<!-- alien toggle - customisable -->
+
+<input class="alientoggle" type="checkbox"/>
+
+<!-- solar system configurator toggle switches -->
+
+<div id="toggletext"><p>Customisation Controls</p></div>
+
+<div class="flex-container">
+
+	<div class="column">
+	<!-- sun -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="sunHide" type="checkbox" hidden="hidden">
+			<label for="sunHide" class="ts-helper"></label>
+			<label for="sunHide" class="ts-label">Sun Hide</label>
+		</div>
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="sunSpeed" type="checkbox" hidden="hidden">
+			<label for="sunSpeed" class="ts-helper"></label>
+			<label for="sunSpeed" class="ts-label">Sun Speed</label>
+		</div>
+
+		<!-- murcury -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="murcuryHide" type="checkbox" hidden="hidden">
+			<label for="murcuryHide" class="ts-helper"></label>
+			<label for="murcuryHide" class="ts-label">Murcury Hide</label>
+		</div>
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="murcurySpeed" type="checkbox" hidden="hidden">
+			<label for="murcurySpeed" class="ts-helper"></label>
+			<label for="murcurySpeed" class="ts-label">Murcury Speed</label>
+		</div>
+
+	</div>
+
+	<div class="column">
+		<!-- venus -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="venusHide" type="checkbox" hidden="hidden">
+			<label for="venusHide" class="ts-helper"></label>
+			<label for="venusHide" class="ts-label">Venus Hide</label>
+		</div>
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="venusSpeed" type="checkbox" hidden="hidden">
+			<label for="venusSpeed" class="ts-helper"></label>
+			<label for="venusSpeed" class="ts-label">Venus Speed</label>
+		</div>
+
+		<!-- earth -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="earthHide" type="checkbox" hidden="hidden">
+			<label for="earthHide" class="ts-helper"></label>
+			<label for="earthHide" class="ts-label">Earth Hide</label>
+		</div>
+
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="earthSpeed" type="checkbox" hidden="hidden">
+			<label for="earthSpeed" class="ts-helper"></label>
+			<label for="earthSpeed" class="ts-label">Earth Speed</label>
+		</div>
+
+	</div>
+
+	<div class="column">
+		<!-- tesla -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="teslaHide" type="checkbox" hidden="hidden">
+			<label for="teslaHide" class="ts-helper"></label>
+			<label for="teslaHide" class="ts-label">Tesla Hide</label>
+		</div>
+
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="teslaSpeed" type="checkbox" hidden="hidden">
+			<label for="teslaSpeed" class="ts-helper"></label>
+			<label for="telsaSpeed" class="ts-label">Tesla Speed</label>
+		</div>
+
+		<!-- mars -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="marsHide" type="checkbox" hidden="hidden">
+			<label for="marsHide" class="ts-helper"></label>
+			<label for="marsHide" class="ts-label">Mars Hide</label>
+		</div>
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="marsSpeed" type="checkbox" hidden="hidden">
+			<label for="marsSpeed" class="ts-helper"></label>
+			<label for="marsSpeed" class="ts-label">Mars Speed</label>
+		</div>
+
+	</div>
+
+	<div class="column">
+		<!-- jupiter -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="jupiterHide" type="checkbox" hidden="hidden">
+			<label for="jupiterHide" class="ts-helper"></label>
+			<label for="jupiterHide" class="ts-label">Jupiter Hide</label>
+		</div>
+
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="jupiterSpeed" type="checkbox" hidden="hidden">
+			<label for="jupiterSpeed" class="ts-helper"></label>
+			<label for="jupiterSpeed" class="ts-label">Jupiter Speed</label>
+		</div>
+
+		<!-- saturn -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="saturnHide" type="checkbox" hidden="hidden">
+			<label for="saturnHide" class="ts-helper"></label>
+			<label for="saturnHide" class="ts-label">Saturn Hide</label>
+		</div>
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="saturnSpeed" type="checkbox" hidden="hidden">
+			<label for="saturnSpeed" class="ts-helper"></label>
+			<label for="saturnSpeed" class="ts-label">Saturn Speed</label>
+		</div>
+
+	</div>
+
+	<div class="column">
+		<!-- uranus -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="uranusHide" type="checkbox" hidden="hidden">
+			<label for="uranusHide" class="ts-helper"></label>
+			<label for="uranusHide" class="ts-label">Uranus Hide</label>
+		</div>
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="uranusSpeed" type="checkbox" hidden="hidden">
+			<label for="uranusSpeed" class="ts-helper"></label>
+			<label for="uranusSpeed" class="ts-label">Uranus Speed</label>
+		</div>
+
+		<!-- neptune -->
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="neptuneHide" type="checkbox" hidden="hidden">
+			<label for="neptuneHide" class="ts-helper"></label>
+			<label for="neptuneHide" class="ts-label">Neptune Hide</label>
+
+		</div>
+
+		<div id="activate" class="toggle-switch" data-ts-color="green">
+			<input id="neptuneSpeed" type="checkbox" hidden="hidden">
+			<label for="neptuneSpeed" class="ts-helper"></label>
+			<label for="neptuneSpeed" class="ts-label">Neptune Speed</label>
+		</div>
+
+	</div>
+
+</div>
+
+
+<!-- alien zoom range slider-->
+
+<div id="zoomtext"><p></p></div>
+
+	<input class="zoomcontainer" type="range" id="rangeinput" min="1" max="25" value="1" onchange="rangevalue.value=value"/>
+    <span class="highlight"></span>
+    <output id="rangevalue">1</output>
+
+
+<!-- magnify range slider-->
+
+<!-- <div id="zoommagnify"><p></p></div>
+
+	<input class="zoommagnifycontainer" type="range" id="magnifyrangeinput" min="100" max="500" value="50" onchange="rangevalue.value=value"/>
+    <span class="highlight"></span>
+    <output id="magnifyrangevalue">1</output> -->
+
+<!-- Neil Armstrong block quote-->
+
+<div id="quotes">
+	<blockquote>
+		<h1>I didn’t feel like a giant. I felt very, very small.</h1>
+	</blockquote>
+	<h2>- Neil Armstrong -</h2>
+
+
+<!-- p tag for solar system header-->
+
+<p id="solarsystemname"></p>
+
+<!-- alien ship speedchanger entry area -->
+
+<div id="alientext"><p>GIVE ME ALIENS !</p></div>
+
+<!-- media querie picture - when screen is too small -->
+
+<div><img id="biggerisbetter" src="assets/bigger-is-better.jpg" style="width:100%; height:100%; border:0;"></div>
+
+<!-- drop down menu for further planet details -->
+
+<div id="planetlinks">
+	<div class="dropdown">
+	<button onclick="myFunction()" class="dropbtn">PLANET LINKS</button>
+	  <div id="myDropdown" class="dropdown-content">
+	     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+	  </div>
+	</div>
+	<input type="hidden" id = "port" value = "0">
+</div>
+
+
+
+
+</body>
+
+<script>document.body.className += ' fade-out';</script>
+<script src = "js/planets.js"></script>
+<script src = "js/planets-jq.js"></script>
+
+</html>
+
