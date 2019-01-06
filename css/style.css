@@ -232,84 +232,70 @@ a:hover:after, a:visited:hover:after {
 /* Count 
 ------------------------------------*/
 
-.count{
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  width: 200px;
+  margin: 30px;
+  text-align: center;
+}
+
+.bestobs{
 	width: 100vw;
 	height:400px;
-	margin:0px;
 }
 
-
-#happy-clients a{
-	display: block;
+#DRACO a{
 	color: white;
-	background: rgba(204, 204, 204, 0.2);
+	/*background: rgba(204, 204, 204, 0.2);*/
 	border-radius: 4px;
-	width: 175px;
 	text-decoration: none;
-	position: relative;
-	left: 20px;
-    top: 280px;
     font-size: 7px;
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
 	font-weight:bold;
     padding: 20px;
-	text-align: center;
 }
 
-
-#projects-made a{
-	display: block;
+#EUDODUS a{
 	color: white;
-	background: rgba(204, 204, 204, 0.2);
+/*	background: rgba(204, 204, 204, 0.2);*/
 	border-radius: 4px;
-	width: 175px;
 	text-decoration: none;
-	position: relative;
-	left: 255px;
-    top: 214px;
     font-size: 7px;
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
 	font-weight:bold;
     padding: 20px;
-	text-align: center;
 }
 
-#letters-sent a{
-	display: block;
+#ELEPHANTS a{
 	color: white;
-	background: rgba(204, 204, 204, 0.2);
+/*	background: rgba(204, 204, 204, 0.2);*/
 	border-radius: 4px;
-	width: 175px;
 	text-decoration: none;
-	position: relative;
-	left: 490px;
-    top: 148px;
     font-size: 7px;
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
 	font-weight:bold;
     padding: 20px;
-	text-align: center;
 }
 
-#briefs-wrote a{
-	display: block;
+#MESSIER a{
 	color: white;
-	background: rgba(204, 204, 204, 0.2);
+/*	background: rgba(204, 204, 204, 0.2);*/
 	border-radius: 4px;
-	width: 175px;
 	text-decoration: none;
-	position: relative;
-	left: 725px;
-    top: 82px;
     font-size: 7px;
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
 	font-weight:bold;
     padding: 20px;
-	text-align: center;
 }
 
 #observations-img{
@@ -320,71 +306,31 @@ a:hover:after, a:visited:hover:after {
 }
 
 .roundrect {
-	border-radius: 5px;
+	border-radius: 20px;
 	border-style: solid;
 	border-color: rgba(218, 165, 32, 0.3);
 	border-width: 1px;
 }
 
-#face-img {
-	display:block;
-	width: 50px;
-	height: 50px;
-	position: relative;
-	text-align: center;
-	opacity: 0.7;
-	left: 20px;
-    top: -205px;
+
+#DRACO-img:hover { 
+ opacity: 0.7;
 }
 
-#face-img:hover { 
- opacity: 1;
+#EUDODUS-img:hover { 
+ opacity: 0.7;
 }
 
-#lightbulb-img {
-	display:block;
-	width: 50px;
-	height: 50px;
-	position: relative;
-	text-align: center;
-	opacity: 0.7;
-	left: 255px;
-    top: -255px;
+#ELEPHANTS-img:hover { 
+ opacity: 0.7;
 }
 
-#lightbulb-img:hover { 
- opacity: 1;
+#MESSIER-img:hover { 
+ opacity: 0.7;
 }
 
-#plane-img {
-	display:block;
-	width: 50px;
-	height: 50px;
-	position: relative;
-	text-align: center;
-	opacity: 0.7;
-	left: 490px;
-    top: -305px;
-}
 
-#plane-img:hover { 
- opacity: 1;
-}
-
-#pencil-img {
-	display:block;
-	width: 50px;
-	height: 50px;
-	position: relative;
-	text-align: center;
-	opacity: 0.7;
-	left: 725px;
-    top: -355px;
-}
-
-#pencil-img:hover { 
- opacity: 1;
-}
+/*------ pop ups -------*/
 
 .closeBtn{
     position:absolute;
