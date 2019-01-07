@@ -507,18 +507,33 @@ h1{
 
 .planets{
 	width: 100vw;
-	height:600px;
+	height:500px;
 	margin:0px;
 	padding-top:0px;
 }
 
-#planets{
+#planetsbackground{
 	position: absolute;
 	left: 0px
-    top: 100px;
+    top: 200px;
 	margin: 0px;
 }
 
+
+#thesolarsystem {
+	width:	100vw;
+	height: 30px;
+	color: white;
+	font-family: Raleway, sans-serif;
+	font-weight: bolder;
+	font-size: 10px;
+	letter-spacing: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background: rgba(204, 204, 204,1);
+    z-index: +1;
+}
 
 /* best observations webpage
 =====================================*/
@@ -586,21 +601,6 @@ h1{
 	height: 100vw;
 	background-size: cover;
 }*/
-
-#bestObservations {
-	width:	100vw;
-	height: 20px;
-	color: white;
-	font-family: Raleway, sans-serif;
-	font-weight: bolder;
-	font-size: 10px;
-	letter-spacing: 2px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
-	background: rgba(204, 204, 204, 0.8);
-    z-index: +1;
-}
 
 .wrapper {
     padding: 50px 50px;
