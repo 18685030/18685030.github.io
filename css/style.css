@@ -1,7 +1,4 @@
 
-
-
-
 /* Global styles 
 ------------------------------------*/
 
@@ -11,7 +8,6 @@ body
 	padding:0px;
 	background: #DAA520;
 	z-index: -999;
-
 }
 
 /* Header styles 
@@ -26,7 +22,6 @@ header{
 {
     color: #00BFFF;
 }
-
 
 #header-img{
 	position: absolute;
@@ -71,11 +66,10 @@ nav{
 	bottom:0;
 	left:25vw;
 	right:0;
-/*	left: 22vw;
-    top: 60px;*/
 	margin: 15px;
-	text-align: center
+	text-align: center;
 	width: 600px;
+	height:	30px;
 }
 
 #nav1 a {
@@ -165,8 +159,18 @@ a:hover:after, a:visited:hover:after {
 	margin: 0px;
 }
 
+.mySlides{
+position: relative;
+top: 60px;
+
+}
+
+h1{
+	width: 200px;
+}
+
 #photos h1{
-	width: 150px;
+	display: inline-block;
 	color: white;
 	font-family: Raleway, sans-serif;
 	font-weight: bolder;
@@ -183,9 +187,10 @@ a:hover:after, a:visited:hover:after {
 }
 
 #photos h3{
+	display: inline-block;
 	color: white;
 	font-weight:lighter;
-	width: 275px;
+/*	width: 275px;*/
 	font-size: 8px;
 	letter-spacing: 2px;
 	border-radius: 4px;
@@ -194,8 +199,8 @@ a:hover:after, a:visited:hover:after {
 	font-family: Raleway, sans-serif;
 	line-height: 20px;
 	position: relative;
-	left: 37%;
     top: 275px;
+    left: 10vw;
     z-index: +1;
 	text-align: center;
 }
@@ -229,7 +234,7 @@ a:hover:after, a:visited:hover:after {
     top: -200px;
 }
 
-/* Count 
+/* Best observation slideshow
 ------------------------------------*/
 
 .flex-container {
@@ -241,7 +246,7 @@ a:hover:after, a:visited:hover:after {
 
 .flex-container > div {
   width: 200px;
-  margin: 30px;
+  margin: 20px;
   text-align: center;
 }
 
@@ -259,10 +264,9 @@ a:hover:after, a:visited:hover:after {
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
 	font-weight:bold;
-    padding: 20px;
 }
 
-#EUDODUS a{
+#EUDODUS a {
 	color: white;
 /*	background: rgba(204, 204, 204, 0.2);*/
 	border-radius: 4px;
@@ -271,7 +275,6 @@ a:hover:after, a:visited:hover:after {
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
 	font-weight:bold;
-    padding: 20px;
 }
 
 #ELEPHANTS a{
@@ -283,7 +286,6 @@ a:hover:after, a:visited:hover:after {
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
 	font-weight:bold;
-    padding: 20px;
 }
 
 #MESSIER a{
@@ -295,7 +297,6 @@ a:hover:after, a:visited:hover:after {
 	font-family: Raleway, sans-serif;
 	letter-spacing: 2px;
 	font-weight:bold;
-    padding: 20px;
 }
 
 #observations-img{
@@ -413,7 +414,7 @@ a:hover:after, a:visited:hover:after {
     opacity: 0.8;
 }
 
-#demovideo, {
+#demovideo {
 	position: relative;
 	left: 5%;
     top: 100px;
@@ -471,11 +472,11 @@ a:hover:after, a:visited:hover:after {
     height: 0.3px;
     border: 0;
     border-top: 0.5px solid #C0C0C0;
-    width:	100px;
+    width:	50vw;
     margin: 1em 0;
     padding: 0;
     position: relative;
-	left: 400px;
+	left: 25vw;
     top: 80px;
 }
 
