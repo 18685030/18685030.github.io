@@ -1,3 +1,8 @@
+body {
+/*    background: #DAA520;*/
+    background-image: url("../assets/astro8.jpg");    
+}
+
 
 /* Global styles 
 ------------------------------------*/
@@ -6,7 +11,7 @@ body
 {
 	margin:0px;
 	padding:0px;
-	background: #DAA520;
+/*	background: #DAA520;*/
 	z-index: -999;
 }
 
@@ -552,33 +557,13 @@ h1{
 
 /* media queries for best obs images area*/
 
-/*@media screen and (max-width: 1000px) {
-  div#image-1 {display: none;}
-  div#image-2 {display: none;}
-  div#image-3 {display: none;}
-  div#image-4 {display: none;}
-  div#image-5 {display: none;}
-  div#image-6 {display: none;}
-  div#image-7 {display: none;}
-  div#image-8 {display: none;}
-}
 
-@media screen and (max-width: 500px) {
-  div#image-9 {display: none;}
-  div#image-10 {display: none;}
-  div#image-11 {display: none;}
-  div#image-12 {display: none;}
-  div#image-13 {display: none;}
-  div#image-14 {display: none;}
-  div#image-15 {display: none;}
-  div#image-16 {display: none;}
-}*/
 
 /*.bestObsImages{
 	display: inline-block;
 	height: 100vw;
 }
-*/
+
 
 /*.bestObsImages{
 	position: absolute;
@@ -586,6 +571,14 @@ h1{
 	height: 100vw;
 	background-size: cover;
 }*/
+
+/* media queries for best obs images area*/
+
+@media screen and (max-width: 800px) {
+#child-bd-one {display: none;}
+#child-bd-two {display: none;}
+#child-bd-three {display: none;}
+}
 
 #bestObservations {
 	width:	100vw;
@@ -604,7 +597,7 @@ h1{
 
 .wrapper {
     padding: 50px 50px;
-    max-width: 1200px;
+    max-width: 2000px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -620,6 +613,7 @@ h1{
     margin: 20px;
     height: 300px;
     border: 1px dashed white;
+    opacity: 0.8;
     overflow: hidden;
     position: relative;
     float: left;
