@@ -61,8 +61,7 @@ header{
 nav{
 	color: white;
 	position: absolute;
-	margin: auto;
-	top:7vw;
+	top:80px;
 	bottom:0;
 	left:25vw;
 	right:0;
@@ -521,14 +520,186 @@ h1{
 }
 
 
-/* New planets webpage 
+/* best observations webpage
 =====================================*/
 
+/*.roundrect1 {
+	border-radius: 5px;
+	border-style: dashed;
+	border-color: white;
+	border-width: 1px;
+}
+
+#image-1:hover {
+	transform: scale(1.3);
+}
+
+.flex-container-obs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  position: absolute;
+  width: 100vw;
+  top: 400px;
+}
+
+.flex-container-obs > div {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}*/
+
+/* media queries for best obs images area*/
+
+/*@media screen and (max-width: 1000px) {
+  div#image-1 {display: none;}
+  div#image-2 {display: none;}
+  div#image-3 {display: none;}
+  div#image-4 {display: none;}
+  div#image-5 {display: none;}
+  div#image-6 {display: none;}
+  div#image-7 {display: none;}
+  div#image-8 {display: none;}
+}
+
+@media screen and (max-width: 500px) {
+  div#image-9 {display: none;}
+  div#image-10 {display: none;}
+  div#image-11 {display: none;}
+  div#image-12 {display: none;}
+  div#image-13 {display: none;}
+  div#image-14 {display: none;}
+  div#image-15 {display: none;}
+  div#image-16 {display: none;}
+}*/
+
+/*.bestObsImages{
+	display: inline-block;
+	height: 100vw;
+}
+*/
+
+.bestObsImagesd{
+	position: absolute;
+	top: 300px;
+	height: 100vw;
+	background-size: cover;
+}
+
+
+#bestObservations {
+	width:	100vw;
+	height: 20px;
+	color: white;
+	font-family: Raleway, sans-serif;
+	font-weight: bolder;
+	font-size: 10px;
+	letter-spacing: 2px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background: rgba(204, 204, 204, 0.8);
+    z-index: +1;
+}
+
+.wrapper {
+    padding: 50px 50px;
+    max-width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 80px;
+}
+
+.right {float: right !important;}
+
+/* Image zoom on hover + Overlay colour*/
+
+.parent {
+    width: 45%;
+    margin: 20px;
+    height: 300px;
+    border: 1px dashed white;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+	cursor: pointer;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* Several different images */
+.bg-one {background-image: url("https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA19821_hires.jpg");}
+.bg-two {background-image: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22574_hires.jpg);}
+.bg-three {background-image: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA18905_hires.jpg);}
+.bg-four {background-image: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA16682_hires.jpg);}
+.bg-five {background-image: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA19808_hires.jpg);}
+.bg-six {background-image: url(https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA01486_hires.jpg);}
+
+
+.bestObsImages h4 {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover h4, .parent:focus h4 {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+    .parent {width: 100%; margin: 20px 0px}
+		.wrapper {padding: 20px 20px;}
+}
 
 
 
-/* Footer 
-------------------------------------*/
 
+.hello {display: none}
 
 

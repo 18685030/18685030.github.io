@@ -19,14 +19,7 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
-//--------Move image around screen within its box
 
-// const el = document.querySelector("#DRACO-img");
-
-// el.addEventListener("mousemove", (e) => {
-//   el.style.backgroundPositionX = -e.offsetX + "px";
-//   el.style.backgroundPositionY = -e.offsetY + "px";
-// });
 
 
 
