@@ -1,4 +1,11 @@
+//--------fires a console.log note when document is ready ------
 
+$( document ).ready(function()
+{console.log( "I am ready!" );
+// animateDiv();
+});
+
+//--------start of program details ------
 
 $( "a" ).click(function( event ) {
  event.preventDefault(); // stops default action i.e href link
@@ -612,9 +619,5 @@ function calcSpeed(prev, next) {
 
 }
 
-//--------fires a console.log note when document is ready ------
-
-$( document ).ready(function()
-{console.log( "I am ready!" );
 animateDiv();
-});
+
