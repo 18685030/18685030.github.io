@@ -506,18 +506,6 @@ $(function() {
 });
 
 
-//--------Move image around screen within its box
-
-// const el = document.querySelector("#earthphoto");
-
-// el.addEventListener("mousemove", (e) => {
-//   el.style.backgroundPositionX = -e.offsetX + "px";
-//   el.style.backgroundPositionY = -e.offsetY + "px";
-// });
-
-
-
-
   /*---------magnify slider for hubble telescope */
 
 // var magnify = 4;
