@@ -1,3 +1,4 @@
+
 //--------fires a console.log note when document is ready ------
 
 $( document ).ready(function()
