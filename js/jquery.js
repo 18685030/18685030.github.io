@@ -9,7 +9,7 @@ $( document ).ready(function()
 			}
 			);
     });
-    $(".closeBtn").click(function(){
+    $(".closeBtn").click(function(){ // on click of cancel button fadeout over 100 milliseconds
         $(".astro-pop_up1").fadeOut(100 );
 	});
 

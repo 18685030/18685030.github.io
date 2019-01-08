@@ -1,15 +1,8 @@
 
-//--------fires a console.log note when document is ready ------
-
-$( document ).ready(function()
-{console.log( "I am ready!" );
-// animateDiv();
-
-
 //--------start of program details ------
 
 $( "a" ).click(function( event ) {
- event.preventDefault(); // stops default action i.e href link
+ event.preventDefault(); // stops default action i.e href link for a items
  // show overlay
 });
 
@@ -178,7 +171,7 @@ $(".neptune-pop-up .closeBtn").click(function(){
 // });
 
 
-//hubble
+//hubble - on click of hubble image several elements fade away tp clear the screen for the hyperzoom idea
 
 $("#hubble").click(function(){
 console.log( "Fired" );
@@ -245,7 +238,7 @@ $('.orbit .gravity-neptune').fadeIn(1000)
 
 //toggle switches
 
-//give me aliens
+//give me aliens - when alien toggle siwthc initiated this will show the elements that are current hidden
 
 $('.alientoggle').change(function(){
     if(this.checked) {
@@ -361,7 +354,6 @@ $('#earthSpeed').change(function(){
 		console.log('earth switch off');
     }
 });
-
 
 //tesla
 
@@ -514,7 +506,7 @@ $(function() {
 });
 
 
-  /*---------magnify slider for hubble telescope */
+  /*---------magnify slider for hubble telescope */ 
 
 // var magnify = 4;
 
@@ -533,17 +525,17 @@ $(function() {
 
  /*zoom slider for aliens speed and qty */
 
-var alienspeed = 1;
+var alienspeed = 1; //sets current alien speed at 1
 
 
-  var rangeInput = document.getElementById("rangeinput");
+  var rangeInput = document.getElementById("rangeinput"); 
   rangeInput.addEventListener('change', function() { console.log(rangeinput.value)});
 
-      rangeInput.addEventListener('change', function() {
+      rangeInput.addEventListener('change', function() { //listen for changes in rangeInput whic is ranngeinput above
 
-        alienspeed = this.value;
+        alienspeed = this.value; //assign alien speed var new speed fomr range slider
 
-      if (this.value > 20) {
+      if (this.value > 20) { //if te new speed is higher than 20 (slider goes to 25) then issue an allert
           alert("Hyperspeeeeeeeeed !");
       } 
       //else{
@@ -556,9 +548,9 @@ var alienspeed = 1;
 //--------alien spaceship movements ----------
 
 
-var intense = 3;
+var intense = 3; //2nd speed element for alien when near his treasure
 
-    var l = $(window).height() - 50;
+    var l = $(window).height() - 50; //assign new hights for drag and drop boxes
     var b = $(window).width() - 50;
 
     var zz = $(window).height() - 700;
@@ -568,31 +560,31 @@ var intense = 3;
     var yy = $('#dropbox1').width();
 
 
-    $('#dropbox1').hover(function (){
+    $('#dropbox1').hover(function (){ //on hover of drag and drop box increase alien intensity so it speeds up relative to current speed
     console.log(intense);
     l = zz;
     b = yy;
     aliens = 20;
 
 
-    }, function(){
+    }, function(){ //when not in treasure area change the intensity back to lower level
     l = $(window).height() - 50;
     b = $(window).width() - 50;
-    intense = 2;
+    intense = 2; 
     });
 
 function makeNewPosition(){
     
     // Get viewport dimensions (remove the dimension of the div)
 
-    var nh = Math.floor(Math.random() * l);
-    var nw = Math.floor(Math.random() * b);
+    var nh = Math.floor(Math.random() * l); //move alien at random height around the page
+    var nw = Math.floor(Math.random() * b); //move alien at random width across the page
     
     return [nh,nw];    
     
 }
 
-function animateDiv(){
+function animateDiv(){ //animate the movement sof the alien and take into account the above windown heights for operation
     var newq = makeNewPosition();
     var oldq = $('.alien').offset();
     var speed = calcSpeed([oldq.top, oldq.left], newq);
@@ -622,5 +614,7 @@ function calcSpeed(prev, next) {
 
 animateDiv();
 
+$( document ).ready(function() //I know this shoul wrap the whole code. My background was a large image and should have put a onload screen :/
+{console.log( "I am ready!" );
 });
 

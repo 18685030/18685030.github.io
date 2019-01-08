@@ -6,9 +6,9 @@
 
   var zoom = 4;
 
-  var img, glass, w, h, bw;
+  var img, glass, w, h, bw; //assign mavraibels ot magnify glass
 
-  img = document.getElementById("universe");
+  img = document.getElementById("universe"); //image to maginify
   /*create magnifier glass:*/
   glass = document.createElement("DIV");
   glass.setAttribute("class", "img-magnifier-glass");
