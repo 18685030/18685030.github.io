@@ -479,29 +479,6 @@ h1{
     top: 80px;
 }
 
-/*#portfolio-links li{
-    display: inline;
-}
-
-#portfolio-links a{
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    font-size: 8px;
-	padding-right: 10px;
-	padding-left: 10px;
-	letter-spacing: 2px;
-	font-family: arial, serif;
-    position: relative;
-	left: 250px;
-    top: 90px;
-}
-
-#portfolio-links a:hover {
-	color: #ff6961;
-}
-*/
-
 /* Planets 
 ------------------------------------*/
 
@@ -535,73 +512,6 @@ h1{
 	background: rgba(204, 204, 204,1);
     z-index: +1;
 }
-
-/* best observations webpage
-=====================================*/
-
-/*.roundrect1 {
-	border-radius: 5px;
-	border-style: dashed;
-	border-color: white;
-	border-width: 1px;
-}
-
-#image-1:hover {
-	transform: scale(1.3);
-}
-
-.flex-container-obs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-around;
-  position: absolute;
-  width: 100vw;
-  top: 400px;
-}
-
-.flex-container-obs > div {
-  width: 200px;
-  margin: 20px;
-  text-align: center;
-}*/
-
-/* media queries for best obs images area*/
-
-/*@media screen and (max-width: 1000px) {
-  div#image-1 {display: none;}
-  div#image-2 {display: none;}
-  div#image-3 {display: none;}
-  div#image-4 {display: none;}
-  div#image-5 {display: none;}
-  div#image-6 {display: none;}
-  div#image-7 {display: none;}
-  div#image-8 {display: none;}
-}
-
-@media screen and (max-width: 500px) {
-  div#image-9 {display: none;}
-  div#image-10 {display: none;}
-  div#image-11 {display: none;}
-  div#image-12 {display: none;}
-  div#image-13 {display: none;}
-  div#image-14 {display: none;}
-  div#image-15 {display: none;}
-  div#image-16 {display: none;}
-}*/
-
-/*.bestObsImages{
-	display: inline-block;
-	height: 100vw;
-}
-*/
-
-/*.bestObsImages{
-	position: absolute;
-	top: 300px;
-	height: 100vw;
-	background-size: cover;
-}*/
 
 .wrapper {
     padding: 50px 50px;
