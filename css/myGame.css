@@ -111,20 +111,54 @@ body {
     z-index: 2;
 }
 
-#arrowkeys{
+#arrowkeys1{
     position: fixed;
     opacity: 0;
     margin: auto;
-    top: 60vw;
+    top: 65vw;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 2;
 }
+
+#arrowkeys2{
+    position: fixed;
+    opacity: 0;
+    margin: auto;
+    top: 65vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#arrowkeys3{
+    position: fixed;
+    opacity: 0;
+    margin: auto;
+    top: 65vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#arrowkeys4{
+    position: fixed;
+    opacity: 0;
+    margin: auto;
+    top: 65vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
 #congrats {
     position: fixed;
     margin: auto;
-    top: 90vw;
+    top: 100vw;
     bottom: 0;
     left: 0;
     right: 0;
