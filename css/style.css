@@ -517,6 +517,7 @@ h1{
 	left: 0px
     top: 200px;
 	margin: 0px;
+	z-index: -999;
 }
 
 
@@ -696,6 +697,39 @@ h1{
 		.wrapper {padding: 20px 20px;}
 }
 
+
+/*sortable items for planets*/
+
+#yourscore{
+	position: relative;
+	width: 400px;
+	left:40vw;
+	font-family: Verdana;
+	color: white;
+	font-size: 20px;
+}
+
+div#buttonDiv{
+	font-family: Verdana;
+	color: white;
+	font-size: 20px;
+}
+
+div.sortIt { 
+  height: 50px;
+  width: 50px; 
+  font-family: Verdana;
+  color: white;
+  font-size: 10px;
+  position: relative;
+  top: 200px;
+  left:	25vw;
+  float: left; 
+  margin: 4px; 
+  text-align: center; 
+  padding: 10px; 
+  z-index: 999; 
+}
 
 
 

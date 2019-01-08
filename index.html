@@ -8,6 +8,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<script type "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -118,8 +119,26 @@
 </Section>
 
 <Section class="planets">
-		<div id="thesolarsystem"><p>THE SOLAR SYSTEM</p></div>
+		<div id="thesolarsystem"><p>THE SOLAR SYSTEM [Drag the below planets into order& click me !]</p></div>
 		<div id="planetsbackground"><img src="assets/thesolarsystem.jpg" alt="planets" style="width:100vw; height:500px;"></div>
+
+	<div id="sortableContainer">
+
+ 		<div id="0" class="sortIt"><img src="assets/gamemercury.png" style="width:50px; height:50px; border:0;">Mercury</div>
+        <div id="2" class="sortIt"><img src="assets/gameearth.png" style="width:50px; height:50px; border:0;">Earth</div>
+        <div id="1" class="sortIt"><img src="assets/gamevenus.png" style="width:50px; height:50px; border:0;">Venus</div>
+        <div id="3" class="sortIt"><img src="assets/gamemars.png" style="width:50px; height:50px; border:0;">Mars</div>
+        <div id="4" class="sortIt"><img src="assets/gamesaturn.png" style="width:50px; height:50px; border:0;">Saturn</div>
+        <div id="5" class="sortIt"><img src="assets/gamejupiter.png" style="width:50px; height:50px; border:0;">Jupiter</div>
+        <div id="6" class="sortIt"><img src="assets/gameuranus.png" style="width:50px; height:50px; border:0;">Uranus</div>
+        <div id="7" class="sortIt"><img src="assets/gameneptune.png" style="width:50px; height:50px; border:0;">Neptune</div>
+        
+    </div>
+  <br><br>
+
+  <div id="yourscore"><p></p></div>
+
+
 </Section>
 
     <!-- // Footer -->
