@@ -4,7 +4,7 @@
 $( document ).ready(function()
 {console.log( "I am ready!" );
 // animateDiv();
-});
+
 
 //--------start of program details ------
 
@@ -621,4 +621,6 @@ function calcSpeed(prev, next) {
 }
 
 animateDiv();
+
+});
 
