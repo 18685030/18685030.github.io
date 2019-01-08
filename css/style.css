@@ -513,6 +513,12 @@ h1{
     z-index: +1;
 }
 
+#thesolarsystem:hover {
+color: black;
+}
+
+
+
 .wrapper {
     padding: 50px 50px;
     max-width: 1200px;
