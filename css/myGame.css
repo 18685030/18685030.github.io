@@ -14,16 +14,12 @@ body {
 }
 
 @media (max-width: 414px) {
-    #biggerisbetter {display:block}
+    #biggerscreenneeded {display:block}
 }
 
 @media (min-width: 415px) {
-    #biggerisbetter {display:none}
+    #biggerscreenneeded {display:none}
 }
-
-
-
-
 
 
 #canvas{ 
