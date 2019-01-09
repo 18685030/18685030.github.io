@@ -1,7 +1,7 @@
 
 body {
     opacity: 1;
-    background: #DAA520;
+    background: black;
     transition: 3s opacity;
 }
 body.fade-out {
