@@ -3,6 +3,29 @@ body {
     background-image: url("../assets/gamebackground.gif");    
 }
 
+/*display message that game not suitable for small devices and best on desktop*/
+
+
+#biggerscreenneeded {
+  position: fixed;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 9999;
+}
+
+@media (max-width: 414px) {
+    #biggerisbetter {display:block}
+}
+
+@media (min-width: 415px) {
+    #biggerisbetter {display:none}
+}
+
+
+
+
+
+
 #canvas{ 
 
   position: fixed;
