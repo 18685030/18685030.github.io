@@ -426,15 +426,13 @@ h1{
 
 #demovideo {
 	position: relative;
-	left: 5%;
     top: 100px;
     opacity: 0.8;
 }
 
 #validationvideo {
 	position: relative;
-	left: 5%;
-    top: 100px;
+    top: 80px;
     opacity: 0.8;
 }
 

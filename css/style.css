@@ -427,7 +427,6 @@ h1{
 
 #video{
 	position: relative;
-	left: 10%;
     top: 80px;
     opacity: 0.8;
 }
@@ -513,7 +512,7 @@ h1{
 #thesolarsystem {
 	width:	100vw;
 	height: 30px;
-	color: white;
+	color: black;
 	font-family: Raleway, sans-serif;
 	font-weight: bolder;
 	font-size: 12px;
@@ -526,7 +525,8 @@ h1{
 }
 
 #thesolarsystem:hover {
-color: black;
+	cursor: pointer;
+	color: red;
 }
 
 
@@ -657,6 +657,10 @@ div.sortIt {
   text-align: center; 
   padding: 10px; 
   z-index: 999; 
+}
+
+div.sortIt { 
+	curser: -webkit-grab; cursor: grab;
 }
 
 
