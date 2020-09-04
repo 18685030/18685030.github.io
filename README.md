@@ -1,3 +1,3 @@
-# 18685030.github.io
+# Web Authoring Assignment
 
-Link: https://18685030.github.io/
+Link: https://garry-clawson.github.io/web-authoring.github.io/.
